@@ -1,0 +1,389 @@
+/* ==================================================
+   ESTILO GENERAL
+================================================== */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #27496b;
+    background-color: #f4f9ff;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #0d3b66;
+}
+
+a {
+    color: #1d6fa5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #155a87;
+    text-decoration: underline;
+}
+
+
+/* ==================================================
+   NAVBAR
+================================================== */
+
+.navbar {
+    background-color: #0d3b66 !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #dbeeff !important;
+}
+
+
+/* ==================================================
+   BOTONES
+================================================== */
+
+.btn-primary {
+    background-color: #1d6fa5;
+    border-color: #1d6fa5;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #155a87;
+    border-color: #155a87;
+}
+
+.btn-secondary {
+    background-color: #dbeeff;
+    border-color: #9fc4e8;
+    color: #0d3b66;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #c7def7;
+    border-color: #8fb9e6;
+    color: #0d3b66;
+}
+
+
+/* ==================================================
+   CARRUSEL
+================================================== */
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    background-color: rgba(13, 59, 102, 0.55);
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    color: #ffffff;
+}
+
+.carousel-item {
+    height: 32rem;
+    background-color: #9fc4e8;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+}
+
+.carousel-indicators button {
+    background-color: #ffffff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+
+/* ==================================================
+   CONTENIDO PRINCIPAL
+================================================== */
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.marketing .rounded-circle {
+    object-fit: cover;
+    border: 4px solid #dbeeff;
+    box-shadow: 0 4px 12px rgba(13, 59, 102, 0.15);
+}
+
+
+/* ==================================================
+   FEATURETTES
+================================================== */
+
+.featurette-divider {
+    margin: 5rem 0;
+    border-color: #cfe4ff;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: -.03rem;
+}
+
+.featurette .lead {
+    color: #40607f;
+}
+
+.featurette img {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 14px rgba(13, 59, 102, 0.12);
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer.container {
+    border-top: 1px solid #cfe4ff;
+    padding-top: 1.5rem;
+}
+
+footer p,
+footer a {
+    color: #40607f;
+}
+
+footer a:hover {
+    color: #0d3b66;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .carousel-item {
+        height: 24rem;
+    }
+
+    .carousel-item > img {
+        height: 24rem;
+    }
+
+    .carousel-caption {
+        bottom: 2rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .featurette-heading {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .featurette img {
+        height: auto;
+        max-width: 100%;
+        margin-top: 1.5rem;
+    }
+}
+
+
+
+/* ==================================================
+   FORMULARIO PRO (con bordes elegantes)
+================================================== */
+
+/* Contenedor tipo tarjeta */
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    border: 1px solid #cfe4ff;
+    box-shadow: 0 8px 22px rgba(13, 59, 102, 0.12);
+}
+
+/* Título */
+main h1 {
+    color: #0d3b66;
+    font-weight: 600;
+}
+
+/* Imagen decorativa */
+.imagen-formulario {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    border: 2px solid #dbeeff;
+    box-shadow: 0 6px 18px rgba(13, 59, 102, 0.12);
+}
+
+/* Labels */
+.form-label {
+    color: #0d3b66;
+    font-weight: 600;
+}
+
+/* Inputs y selects */
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+    border: 2px solid #dbeeff;
+    padding: 0.6rem 0.75rem;
+    transition: all 0.25s ease;
+}
+
+/* Hover suave */
+.form-control:hover,
+.form-select:hover {
+    border-color: #9fc4e8;
+}
+
+/* Focus (efecto guapo) */
+.form-control:focus,
+.form-select:focus {
+    border-color: #1d6fa5;
+    box-shadow: 0 0 0 0.25rem rgba(29, 111, 165, 0.2);
+    outline: none;
+}
+
+/* Espaciado */
+.mb-3 {
+    margin-bottom: 1.4rem !important;
+}
+
+/* Botón */
+button.btn {
+    padding: 0.65rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+/* Botón hover con efecto */
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(29, 111, 165, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ==================================================
+   RESULTADO
+================================================== */
+
+.mensaje-resultado {
+    background-color: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 0.8rem;
+    border: 1px solid #cfe4ff;
+    box-shadow: 0 8px 22px rgba(13, 59, 102, 0.12);
+}
+
+.mensaje-resultado h1 {
+    color: #0d3b66;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.mensaje-resultado .lead {
+    color: #40607f;
+    margin-bottom: 2rem;
+}
+
+.mensaje-resultado .btn {
+    min-width: 190px;
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.mensaje-resultado .btn:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+    .mensaje-resultado {
+        padding: 2rem 1.2rem;
+    }
+
+    .mensaje-resultado .btn {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+}
